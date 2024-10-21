@@ -1,20 +1,12 @@
-from PyQt6.QtWidgets import QApplication, QMainWindow
+from tkinter import *
 
-import sys
-
-class mainWindow(QMainWindow):
+class Root(Tk):
     def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Automation Controller")
-        self.setGeometry(50,100,640,680)
+        super(Root,self).__init__()
+
+        self.title(“Tkinter Window Example”)
+        self.minsize(500,400)
 
 
-def main():
-    app = QApplication([])
-    window = mainWindow()
-    window.show()
-    app.exec()
-
-
-if __name__ == '__main__':
-    main()
+root = Root()
+root.mainloop()
