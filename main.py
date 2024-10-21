@@ -4,7 +4,7 @@ class Root(Tk):
     def __init__(self):
         super(Root,self).__init__()
 
-        self.title(“Tkinter Window Example”)
+        self.title('Tkinter Window Example')
         self.minsize(500,400)
 
 
